@@ -1,0 +1,6 @@
+style "default" {
+	fontset = "sans-serif"
+}
+
+class "*" style "default"
+gtk-error-bell = 0

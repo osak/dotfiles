@@ -1,0 +1,19 @@
+keycode 113 = Left
+keycode 111 = Up
+keycode 116 = Down
+keycode 114 = Right
+keycode 97 = backslash
+clear mod3
+keycode 100 = Shift_L
+add shift = Shift_L
+keycode 101 = Zenkaku_Hankaku
+keycode 110 = Home
+keycode 115 = End
+remove mod4 = Super_R
+keycode 134 = Shift_L
+
+remove Lock = Caps_Lock
+remove Control = Control_L
+keysym Caps_Lock = Control_L
+add Lock = Caps_Lock
+add Control = Control_L
