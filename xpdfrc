@@ -19,5 +19,7 @@ fontFile	MS-Gothic	/usr/share/fonts/TTF/ipag.ttf
 fontFile	MS-PGothic	/usr/share/fonts/TTF/ipagp.ttf
 fontFile	MS-Mincho	/usr/share/fonts/TTF/ipam.ttf
 fontFile	MS-PMincho	/usr/share/fonts/TTF/ipamp.ttf
+fontFile	HeiseiMin-W3	/usr/share/fonts/TTF/ipamp.ttf
+fontFile	HeiseiKakuGo-W5	/usr/share/fonts/TTF/ipagp.ttf
 fontFileCC	Kochi-Gothic	/usr/share/fonts/TTF/VeraSe.ttf
 fontFile Ryumin-Light-Identity-H /usr/share/fonts/TTF/ipagp.ttf
