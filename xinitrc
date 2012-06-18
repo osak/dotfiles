@@ -3,7 +3,7 @@ export GTK_IM_MODULE=ibus
 export TERM=mlterm
 export LANG=ja_JP.utf-8
 #uim-xim &
-ibus-daemon &
+ibus-daemon --xim -d
 export XMODIFIERS='@im=ibus'
 
 wicd-gtk &
