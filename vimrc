@@ -210,6 +210,11 @@ hi MatchParen ctermbg=blue
 
 inoremap <expr> <CR> pumvisible() ? "\<C-Y>\<CR>" : "\<CR>"
 
+noremap  
+noremap!  
+noremap <BS> 
+noremap! <BS> 
+
 let g:acp_enableAtStartUp = 0
 let g:neocomplcache_enable_at_startup = 1
 "let g:NeoComplCache_ManualCompletionStartLength = 4
