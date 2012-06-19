@@ -202,6 +202,8 @@ set list
 set listchars=tab:>-
 set exrc
 set secure
+set statusline=%q%h%w%f%r%m\ %=%l/%L,%c\ [%{b:charCounterCount}]
+set laststatus=2
 
 "colorscheme default
 set background=dark
