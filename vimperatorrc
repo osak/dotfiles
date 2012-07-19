@@ -5,7 +5,7 @@ command! -nargs=0 tp tombloo! Photo - Capture
 command! -nargs=0 tt tombloo! Text
 set editor="mlterm -e vim"
 set complete=slbt
-set noinsertmode
+set insertmode
 set runtimepath=/home/osa/.vimperator
 set tabnumbers
 set gui+=nomenu

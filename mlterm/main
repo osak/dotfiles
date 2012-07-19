@@ -1,10 +1,10 @@
 logsize = 1024
 input-method=ibus
 use_transbg = false
-wall_picture = /home/osa/img/azu_miku_wall.jpg
+wall_picture = /home/osa/img/azusa-fate.jpg
 brightness = 0
 contrast = 50
-gamma = 40
+gamma = 50
 col_size_of_width_a = 2
 bel_mode = visual
 fontsize = 16
