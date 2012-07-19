@@ -13,6 +13,9 @@ for f in glob.iglob("*"):
     try:
         if f in ignore:
             pass
+        elif re.match(".*~$", f):
+            # Ignore vim backup files
+            pass
         elif re.match("vimp-plugin", f):
             os.symlink(cwd + "/" + f, target + "/.vimperator/plugin")
         else:
