@@ -14,8 +14,11 @@ export PATH="$PATH:/var/lib/gems/1.9.1/bin:$HOME/script:$HOME/.cabal/bin:$HOME/.
 export GEM_HOME="$HOME/.gem"
 export PYTHONPATH="/home/osa/.local/lib/python:$PYTHONPATH"
 export EDITOR="vim"
+export SVN_SSH='ssh -l osak -i /home/osa/.ssh/sakura_key'
 export LANG=ja_JP.utf8
 export TZ='Asia/Tokyo'
+export CFLAGS="-Wall -O2"
+export CXXFLAGS="-Wall -O2 -D_GLIBCXX_DEBUG"
 
 export REPORTTIME=60
 
@@ -23,6 +26,7 @@ alias cp='cp -v'
 alias rm='rm -v'
 alias vi='vim'
 alias ls='ls -F --color'
+alias azcat=cat
 
 autoload -Uz compinit
 compinit
