@@ -37,6 +37,7 @@ set incsearch		" do incremental searching
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
+set t_Co=16
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 " set mouse=a
@@ -205,10 +206,12 @@ set secure
 set statusline=%q%h%w%f%r%m\ %=%l/%L,%c\ [%{b:charCounterCount}]
 set laststatus=2
 
-"colorscheme default
+let g:solarized_termtrans=1
+"let g:solarized_termcolors=256
 set background=dark
-
-hi MatchParen ctermbg=blue
+"colorscheme wombat256mod
+hi Statement cterm=bold
+hi Type cterm=bold
 
 inoremap <expr> <CR> pumvisible() ? "\<C-Y>\<CR>" : "\<CR>"
 
