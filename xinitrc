@@ -2,6 +2,7 @@ export QT_IM_MODULE=ibus
 export GTK_IM_MODULE=ibus
 export TERM=mlterm
 export LANG=ja_JP.utf-8
+eval `dircolors ~/.dir_colors`
 #uim-xim &
 ibus-daemon --xim -d
 export XMODIFIERS='@im=ibus'
