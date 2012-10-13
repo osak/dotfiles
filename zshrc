@@ -18,7 +18,7 @@ export SVN_SSH='ssh -l osak -i /home/osa/.ssh/sakura_key'
 export LANG=ja_JP.utf8
 export TZ='Asia/Tokyo'
 export CFLAGS="-Wall -O2"
-export CXXFLAGS="-Wall -O2 -D_GLIBCXX_DEBUG"
+export CXXFLAGS="-Wall -O2 -D_GLIBCXX_DEBUG -g"
 
 export REPORTTIME=60
 
