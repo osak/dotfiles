@@ -67,6 +67,7 @@ if has("autocmd")
   autocmd FileType scheme :let is_gauche=1
   autocmd FileType java setlocal omnifunc=javacomplete#Complete
   autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
+  autocmd FileType cpp setlocal omnifunc=omni#cpp#complete#Main
 
 
   " When editing a file, always jump to the last known cursor position.
@@ -100,7 +101,7 @@ if has("autocmd")
   
 else
 
-	set autoindent		" always set autoindenting on
+  set autoindent		" always set autoindenting on
 
 endif " has("autocmd")
 
@@ -108,6 +109,15 @@ endif " has("autocmd")
 " file it was loaded from, thus the changes you made.
 " command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
 			"\ | wincmd p | diffthis
+
+" Vundle
+filetype off
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+Bundle 'gmarik/vundle'
+Bundle 'Shougo/neocomplcache'
+Bundle 'maksimr/vim-jsbeautify'
+filetype plugin indent on
 
 nnoremap <silent> <Plug>select_cstyle_if :<C-u>call <SID>select_cstyle_if()<CR>
 
@@ -186,6 +196,7 @@ nnoremap Q :QuickRun<CR>
 au BufNewFile,BufRead *.ctp setf php
 au BufNewFile,BufRead *.io setf io
 au BufNewFile,BufRead *.S setf gas
+au BufNewFile,BufRead *.gbs setf gunbaiscript
 set encoding=utf-8
 set termencoding=utf-8
 set fileencodings=iso-2022-jp,euc-jp,cp932,utf-8
