@@ -217,6 +217,10 @@ set secure
 set statusline=%q%h%w%f%r%m\ %=%l/%L,%c\ [%{b:charCounterCount}]
 set laststatus=2
 
+set mouse=a
+set ttymouse=xterm2
+set notitle
+
 let g:solarized_termtrans=1
 "let g:solarized_termcolors=256
 set background=dark
@@ -241,5 +245,5 @@ let g:neocomplcache_enable_at_startup = 1
 let g:changelog_dateformat = "%Y/%m/%d"
 "let g:solarized_termcolors=256
 let g:quickrun_config = {
-      \ "cpp": {"cmdopt": "-D_GLIBCXX_DEBUG -Wall"}
+      \ "cpp": {"cmdopt": "-D_GLIBCXX_DEBUG -Wall -g"}
       \ }
