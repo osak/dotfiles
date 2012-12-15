@@ -31,3 +31,9 @@ alias azcat=cat
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+DIRSTACKSIZE=100
+setopt AUTO_PUSHD
+
+zstyle ':completion:*' menu select
+zstyle ':completion:*:cd:*' ignore-parents parent pwd
