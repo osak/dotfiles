@@ -227,6 +227,7 @@ set background=dark
 "colorscheme wombat256mod
 hi Statement cterm=bold
 hi Type cterm=bold
+hi Pmenusel ctermbg=12
 
 inoremap <expr> <CR> pumvisible() ? "\<C-Y>\<CR>" : "\<CR>"
 
