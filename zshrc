@@ -9,7 +9,7 @@ bindkey -e
 zstyle :compinstall filename '/home/osa/.zshrc'
 
 export RPROMPT='[%~]'
-export PROMPT='YUKI.N> '
+export PROMPT='YUKI.N@%m> '
 export PATH="$PATH:/var/lib/gems/1.9.1/bin:$HOME/script:$HOME/.cabal/bin:$HOME/.gem/bin:$HOME/app/arm-2011.09/bin:/home/osa/.gem/ruby/1.9.1/bin"
 export GEM_HOME="$HOME/.gem"
 export PYTHONPATH="/home/osa/.local/lib/python:$PYTHONPATH"
