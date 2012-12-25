@@ -23,7 +23,7 @@ let PLUGIN_INFO =
 let INFO =
 <>
   <plugin name="opener" version="1.0.0"
-          href="http://svn.coderepos.org/share/lang/javascript/vimperator-plugins/trunk/opener.js"
+          href="http://github.com/vimpr/vimperator-plugins/blob/master/opener.js"
           summary="URL 移動時にそのURLが既に開かれていたら、そのタブに移動する"
           xmlns="http://vimperator.org/namespaces/liberator">
     <author>voidy21</author>
@@ -51,7 +51,7 @@ let INFO =
     }
     for each ( [,tab] in tabs.browsers ) {
       if (url == tab.currentURI.spec){
-        tabs.select(index);
+        tabs.select(index, false, true);
         return true;
       }
       ++index;
