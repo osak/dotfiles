@@ -30,4 +30,4 @@ termtype=mlterm
 mod_meta_key=alt
 mod_meta_mode=esc
 alpha = 0
-input_method = ibus
+input_method = xim
