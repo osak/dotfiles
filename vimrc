@@ -117,9 +117,13 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'Shougo/neocomplcache'
 Bundle 'maksimr/vim-jsbeautify'
+Bundle 'eagletmt/ghcmod-vim'
+Bundle 'ujihisa/neco-ghc'
 filetype plugin indent on
 
 nnoremap <silent> <Plug>select_cstyle_if :<C-u>call <SID>select_cstyle_if()<CR>
+
+autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 
 function! s:select_cstyle_if()  " {{{
   let orig_view = winsaveview()
