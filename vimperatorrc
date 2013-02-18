@@ -19,6 +19,9 @@ javascript if (typeof hBookmark != 'undefined') liberator.loadScript('chrome://h
 
 let g:ime_activate_xkey='on'
 let g:ime_deactivate_xkey='off'
-let g:imeoff='cmd'
+"let g:imeoff='cmd'
+
+map <C-f> 40j
+map <C-b> 40k
 
 " vim: set ft=vimperator:
