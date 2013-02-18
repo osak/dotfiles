@@ -10,7 +10,7 @@ zstyle :compinstall filename '/home/osa/.zshrc'
 
 export RPROMPT='[%~]'
 export PROMPT='YUKI.N@%m> '
-export PATH="$PATH:/var/lib/gems/1.9.1/bin:$HOME/script:$HOME/.cabal/bin:$HOME/.gem/bin:$HOME/app/arm-2011.09/bin:/home/osa/.gem/ruby/1.9.1/bin"
+export PATH="$PATH:/var/lib/gems/1.9.1/bin:$HOME/script:$HOME/.cabal/bin:$HOME/.gem/bin:$HOME/app/arm-2011.09/bin:/home/osa/.gem/ruby/1.9.1/bin:/home/osa/.local/bin"
 export GEM_HOME="$HOME/.gem"
 export PYTHONPATH="/home/osa/.local/lib/python:$PYTHONPATH"
 export EDITOR="vim"
@@ -27,6 +27,21 @@ alias rm='rm -v'
 alias vi='vim'
 alias ls='ls -F --color'
 alias azcat=cat
+
+function cal() {
+    if [ $# -ne 2 ]; then
+        command cal $*
+    else
+        month=$1
+        year=$2
+        if [ $month -gt $year ]; then
+            tmp=$month
+            month=$year
+            year=$tmp
+        fi
+        command cal $month $year
+    fi
+}
 
 autoload -Uz compinit
 compinit
