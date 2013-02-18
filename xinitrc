@@ -1,4 +1,4 @@
-IM_MODULE=uim
+IM_MODULE=xim
 export QT_IM_MODULE=$IM_MODULE
 export GTK_IM_MODULE=$IM_MODULE
 export TERM=mlterm
@@ -6,7 +6,7 @@ export LANG=ja_JP.utf-8
 eval `dircolors ~/.dir_colors`
 uim-xim &
 #ibus-daemon --xim -d
-export XMODIFIERS="@im=$IM_MODULE"
+export XMODIFIERS="@im=uim"
 
 wicd-gtk &
 setxkbmap -layout us -model us
