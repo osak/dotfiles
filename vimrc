@@ -37,7 +37,7 @@ set incsearch		" do incremental searching
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
-set t_Co=16
+set t_Co=256
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 " set mouse=a
@@ -226,7 +226,7 @@ set ttymouse=xterm2
 set notitle
 
 let g:solarized_termtrans=1
-"let g:solarized_termcolors=256
+let g:solarized_termcolors=256
 set background=dark
 "colorscheme wombat256mod
 hi Statement cterm=bold
