@@ -1,0 +1,16 @@
+[app] (name=fbrun)
+  [Position]	(WINCENTER)	{0 0}
+  [Layer]	{2}
+[end]
+
+[app] (name=mlterm)
+  [Alpha] {220}
+[end]
+
+[group]
+    [app] (class=Xpdf)
+[end]
+
+[app] (name=mikutter)
+    [Alpha] {225 255}
+[end]
