@@ -4,9 +4,9 @@ export GTK_IM_MODULE=$IM_MODULE
 export TERM=mlterm
 export LANG=ja_JP.utf-8
 eval `dircolors ~/.dir_colors`
-uim-xim &
-#ibus-daemon --xim -d
-export XMODIFIERS="@im=uim"
+#uim-xim &
+ibus-daemon --xim -d
+export XMODIFIERS="@im=ibus"
 
 wicd-gtk &
 setxkbmap -layout us -model us
@@ -25,7 +25,7 @@ wmclock &
 wmcpu &
 wmbattery &
 
-uim-toolbar-gtk3-systray &
+#uim-toolbar-gtk3-systray &
 sleep 5
 
 exec fluxbox &
