@@ -112,13 +112,15 @@ endif " has("autocmd")
 
 " Vundle
 filetype off
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
-Bundle 'gmarik/vundle'
-Bundle 'Shougo/neocomplcache'
-Bundle 'maksimr/vim-jsbeautify'
-Bundle 'eagletmt/ghcmod-vim'
-Bundle 'ujihisa/neco-ghc'
+set rtp+=~/.vim/bundle/neobundle.vim
+call neobundle#rc(expand('~/.vim/bundle/'))
+NeoBundleFetch 'Shougo/neobundle.vim'
+NeoBundle 'gmarik/vundle'
+NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'maksimr/vim-jsbeautify'
+NeoBundle 'eagletmt/ghcmod-vim'
+NeoBundle 'ujihisa/neco-ghc'
+NeoBundle 'anekos/char-counter-vim'
 filetype plugin indent on
 
 nnoremap <silent> <Plug>select_cstyle_if :<C-u>call <SID>select_cstyle_if()<CR>
@@ -252,3 +254,5 @@ let g:changelog_dateformat = "%Y/%m/%d"
 let g:quickrun_config = {
       \ "cpp": {"cmdopt": "-D_GLIBCXX_DEBUG -Wall -g"}
       \ }
+
+NeoBundleCheck
