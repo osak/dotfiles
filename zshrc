@@ -19,6 +19,7 @@ export LANG=ja_JP.utf8
 export TZ='Asia/Tokyo'
 export CFLAGS="-Wall -O2"
 export CXXFLAGS="-Wall -O2"
+export MAKEFLAGS="-j4"
 
 export REPORTTIME=60
 
@@ -26,6 +27,7 @@ alias cp='cp -v'
 alias rm='rm -v'
 alias vi='vim'
 alias ls='ls -F --color'
+alias pacman='pacman-color'
 alias azcat=cat
 
 function cal() {
