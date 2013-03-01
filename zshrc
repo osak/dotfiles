@@ -6,15 +6,15 @@ setopt extendedglob
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/osa/.zshrc'
+zstyle :compinstall filename '/home/osak/.zshrc'
 
 export RPROMPT='[%~]'
 export PROMPT='YUKI.N@%m> '
-export PATH="$PATH:/var/lib/gems/1.9.1/bin:$HOME/script:$HOME/.cabal/bin:$HOME/.gem/bin:$HOME/app/arm-2011.09/bin:/home/osa/.gem/ruby/1.9.1/bin:/home/osa/.local/bin"
+export PATH="$PATH:/var/lib/gems/1.9.1/bin:$HOME/script:$HOME/.cabal/bin:$HOME/.gem/bin:$HOME/app/arm-2011.09/bin:$HOME/.local/bin"
 export GEM_HOME="$HOME/.gem"
-export PYTHONPATH="/home/osa/.local/lib/python:$PYTHONPATH"
+export PYTHONPATH="/home/osak/.local/lib/python:$PYTHONPATH"
 export EDITOR="vim"
-export SVN_SSH='ssh -l osak -i /home/osa/.ssh/sakura_key'
+export SVN_SSH='ssh -l osak -i /home/osak/.ssh/sakura_key'
 export LANG=ja_JP.utf8
 export TZ='Asia/Tokyo'
 export CFLAGS="-Wall -O2"
