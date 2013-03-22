@@ -66,7 +66,7 @@ if has("autocmd")
   autocmd FileType text setlocal textwidth=78
   autocmd FileType scheme :let is_gauche=1
   autocmd FileType java setlocal omnifunc=javacomplete#Complete
-  autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
+  autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete, sw=2
   autocmd FileType cpp setlocal omnifunc=omni#cpp#complete#Main
 
 
@@ -117,10 +117,18 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'gmarik/vundle'
 NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'Shougo/vimproc', {'build': {'unix': 'make -f make_unix.mak'}}
 NeoBundle 'maksimr/vim-jsbeautify'
 NeoBundle 'eagletmt/ghcmod-vim'
 NeoBundle 'ujihisa/neco-ghc'
 NeoBundle 'anekos/char-counter-vim'
+NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'ruby-matchit'
+NeoBundle 'kana/vim-filetype-haskell'
+NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'osak/molokai'
+NeoBundle 'nanotech/jellybeans.vim'
 filetype plugin indent on
 
 nnoremap <silent> <Plug>select_cstyle_if :<C-u>call <SID>select_cstyle_if()<CR>
@@ -231,6 +239,7 @@ let g:solarized_termtrans=1
 let g:solarized_termcolors=256
 set background=dark
 "colorscheme wombat256mod
+colorscheme molokai
 hi Statement cterm=bold
 hi Type cterm=bold
 hi Pmenusel ctermbg=12
@@ -254,5 +263,6 @@ let g:changelog_dateformat = "%Y/%m/%d"
 let g:quickrun_config = {
       \ "cpp": {"cmdopt": "-D_GLIBCXX_DEBUG -Wall -g"}
       \ }
+let mapleader = ","
 
 NeoBundleCheck
