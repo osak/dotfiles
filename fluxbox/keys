@@ -31,7 +31,7 @@ OnDesktop Mouse5 :PrevWorkspace
 
 Control F1 :GotoWindow 
 
-Mod4 Return :ExecCommand mlterm
+Mod4 Return :ExecCommand urxvt
 Mod4 Control F :ExecCommand firefox
 Mod4 Control T :ExecCommand thunderbird
 Mod4 Control P :ExecCommand opera
