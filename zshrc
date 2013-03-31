@@ -10,7 +10,7 @@ zstyle :compinstall filename '/home/osak/.zshrc'
 
 export RPROMPT='[%~]'
 export PROMPT='YUKI.N@%m> '
-export PATH="/var/lib/gems/1.9.1/bin:$HOME/script:$HOME/.cabal/bin:$HOME/.gem/bin:$HOME/app/arm-2011.09/bin:$HOME/.local/bin:$PATH"
+export PATH="/var/lib/gems/1.9.1/bin:$HOME/script:$HOME/.cabal/bin:$HOME/.gem/bin:$HOME/app/arm-2011.09/bin:$HOME/.local/bin:/usr/bin/vendor_perl:$HOME/.rbenv/shims:$PATH"
 export GEM_HOME="$HOME/.gem"
 export PYTHONPATH="/home/osak/.local/lib/python:$PYTHONPATH"
 export EDITOR="vim"
