@@ -129,6 +129,8 @@ NeoBundle 'kana/vim-filetype-haskell'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'osak/molokai'
 NeoBundle 'nanotech/jellybeans.vim'
+NeoBundle '2GMon/mikutter_mode.vim'
+NeoBundle 'Shougo/neosnippet'
 filetype plugin indent on
 
 nnoremap <silent> <Plug>select_cstyle_if :<C-u>call <SID>select_cstyle_if()<CR>
