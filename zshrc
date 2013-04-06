@@ -27,7 +27,6 @@ alias cp='cp -v'
 alias rm='rm -v'
 alias vi='vim'
 alias ls='ls -F --color'
-alias pacman='pacman-color'
 alias azcat=cat
 
 function cal() {
