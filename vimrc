@@ -263,8 +263,13 @@ let g:neocomplcache_enable_at_startup = 1
 let g:changelog_dateformat = "%Y/%m/%d"
 "let g:solarized_termcolors=256
 let g:quickrun_config = {
-      \ "cpp": {"cmdopt": "-D_GLIBCXX_DEBUG -Wall -g"}
+      \ "cpp": {"cmdopt": "-D_GLIBCXX_DEBUG -Wall -g"},
+      \ "mecab": {"command": "mecab"}
       \ }
 let mapleader = ","
+
+command -range Mecab <line1>,<line2>:QuickRun -type mecab
+nnoremap <leader>m :Mecab<CR>
+vnoremap <leader>m :Mecab<CR>
 
 NeoBundleCheck
