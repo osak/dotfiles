@@ -5,12 +5,11 @@ command! -nargs=0 tp tombloo! Photo - Capture
 command! -nargs=0 tt tombloo! Text
 set editor="mlterm -e vim"
 set complete=slbt
-set insertmode
-set runtimepath=/home/osa/.vimperator
+set runtimepath=/home/osak/.vimperator
 set tabnumbers
 set gui+=nomenu
 set hintmatching=custom
-source! /home/osa/.vimperatorrc.local
+source! /home/osak/.vimperatorrc.local
 
 let autochanger_proxy_settings="[{name:'disable', usage:'direct connection', proxy:{type:0}}, {name:'pubnet', usage:'pubnet', proxy:{type:1, http:'proxy.noc.titech.ac.jp', http_port:3128, ssl:null, ssl_port:0}}]"
 let autochanger_proxy_enabled="true"
