@@ -66,7 +66,7 @@ if has("autocmd")
   autocmd FileType text setlocal textwidth=78
   autocmd FileType scheme :let is_gauche=1
   autocmd FileType java setlocal omnifunc=javacomplete#Complete
-  autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete, sw=2
+  autocmd FileType ruby setlocal sw=2
   autocmd FileType cpp setlocal omnifunc=omni#cpp#complete#Main
 
 
@@ -131,6 +131,8 @@ NeoBundle 'osak/molokai'
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle '2GMon/mikutter_mode.vim'
 NeoBundle 'Shougo/neosnippet'
+NeoBundle 'Align'
+NeoBundle 'tpope/vim-rails'
 filetype plugin indent on
 
 nnoremap <silent> <Plug>select_cstyle_if :<C-u>call <SID>select_cstyle_if()<CR>
