@@ -133,6 +133,7 @@ NeoBundle '2GMon/mikutter_mode.vim'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Align'
 NeoBundle 'tpope/vim-rails'
+NeoBundle 'YankRing.vim'
 filetype plugin indent on
 
 nnoremap <silent> <Plug>select_cstyle_if :<C-u>call <SID>select_cstyle_if()<CR>
@@ -273,5 +274,7 @@ let mapleader = ","
 command -range Mecab <line1>,<line2>:QuickRun -type mecab
 nnoremap <leader>m :Mecab<CR>
 vnoremap <leader>m :Mecab<CR>
+
+nnoremap <leader>p :YRShow<CR>
 
 NeoBundleCheck
