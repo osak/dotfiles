@@ -135,6 +135,7 @@ NeoBundle 'Align'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'YankRing.vim'
 NeoBundle 'osak/japanese-rst-vim'
+NeoBundle 'Shougo/unite.vim'
 filetype plugin indent on
 
 nnoremap <silent> <Plug>select_cstyle_if :<C-u>call <SID>select_cstyle_if()<CR>
