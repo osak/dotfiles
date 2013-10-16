@@ -268,7 +268,7 @@ let g:neocomplcache_enable_at_startup = 1
 let g:changelog_dateformat = "%Y/%m/%d"
 "let g:solarized_termcolors=256
 let g:quickrun_config = {
-      \ "cpp": {"cmdopt": "-D_GLIBCXX_DEBUG -Wall -g -std=c++11"},
+      \ "cpp": {"cmdopt": "-Wall -g -O2 -std=c++11"},
       \ "mecab": {"command": "mecab"}
       \ }
 let mapleader = ","
