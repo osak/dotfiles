@@ -269,7 +269,8 @@ let g:changelog_dateformat = "%Y/%m/%d"
 "let g:solarized_termcolors=256
 let g:quickrun_config = {
       \ "cpp": {"cmdopt": "-Wall -g -O2 -std=c++11"},
-      \ "mecab": {"command": "mecab"}
+      \ "mecab": {"command": "mecab"},
+      \ "_": {"outputter/buffer/split": "vertical 50"}
       \ }
 let mapleader = ","
 
