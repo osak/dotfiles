@@ -1,5 +1,5 @@
 IM_MODULE=xim
-export QT_IM_MODULE=$IM_MODULE
+export QT_IM_MODULE=ibus
 export GTK_IM_MODULE=$IM_MODULE
 export TERM=mlterm
 export LANG=ja_JP.utf-8
