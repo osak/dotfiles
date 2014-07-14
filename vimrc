@@ -136,6 +136,12 @@ NeoBundle 'tpope/vim-rails'
 NeoBundle 'YankRing.vim'
 NeoBundle 'osak/japanese-rst-vim'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'oblitum/rainbow'
+NeoBundle 'renamer.vim'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'slim-template/vim-slim'
+NeoBundle 'fakeclip'
+NeoBundle 'kchmck/vim-coffee-script'
 filetype plugin indent on
 
 nnoremap <silent> <Plug>select_cstyle_if :<C-u>call <SID>select_cstyle_if()<CR>
@@ -279,5 +285,7 @@ nnoremap <leader>m :Mecab<CR>
 vnoremap <leader>m :Mecab<CR>
 
 nnoremap <leader>p :YRShow<CR>
+
+"let g:rainbow_active = 1
 
 NeoBundleCheck
