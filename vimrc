@@ -115,8 +115,7 @@ filetype off
 set rtp+=~/.vim/bundle/neobundle.vim
 call neobundle#rc(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
-NeoBundle 'gmarik/vundle'
-NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'Shougo/neocomplete'
 NeoBundle 'Shougo/vimproc', {'build': {'unix': 'make -f make_unix.mak'}}
 NeoBundle 'maksimr/vim-jsbeautify'
 NeoBundle 'eagletmt/ghcmod-vim'
@@ -142,6 +141,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'fakeclip'
 NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'fatih/vim-go'
 filetype plugin indent on
 
 nnoremap <silent> <Plug>select_cstyle_if :<C-u>call <SID>select_cstyle_if()<CR>
@@ -265,7 +265,7 @@ noremap <BS> 
 noremap! <BS> 
 
 let g:acp_enableAtStartUp = 0
-let g:neocomplcache_enable_at_startup = 1
+let g:neocomplete#enable_at_startup = 1
 "let g:NeoComplCache_ManualCompletionStartLength = 4
 "let g:NeoComplCache_EnableWildCard = 0
 "let g:NeoComplCache_EnableQuickMatch = 0
