@@ -4,12 +4,12 @@
 "command! -nargs=0 tp tombloo! Photo - Capture
 "command! -nargs=0 tt tombloo! Text
 "set editor="mlterm -e vim"
-set complete=slbt
+set complete=sbth
 set runtimepath=/home/osak/.vimperator
 set tabnumbers
 set gui+=nomenu
 set hintchars=UIOPHJKL
-set hintmatching=custom
+set hintmatching=contains
 source! /home/osak/.vimperatorrc.local
 
 let autochanger_proxy_settings="[{name:'disable', usage:'direct connection', proxy:{type:0}}, {name:'pubnet', usage:'pubnet', proxy:{type:1, http:'proxy.noc.titech.ac.jp', http_port:3128, ssl:null, ssl_port:0}}]"
@@ -23,5 +23,16 @@ let g:ime_deactivate_xkey='off'
 
 map <C-f> 40j
 map <C-b> 40k
+
+"hi Hint -append font-size:18px
+"hi CmdLine -append font-size:18px
+"hi CompDesc -append font-size:18px
+"hi CompItem -append font-size:18px
+"hi CompResult -append font-size:18px
+"hi ModeMsg -append font-size:18px
+"hi Normal -append font-size:18px
+"hi TabText -append font-size:18px
+"hi URL -append font-size:18px 
+"hi WarningMsg -append font-size:18px
 
 " vim: set ft=vimperator:

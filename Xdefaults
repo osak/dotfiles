@@ -5,7 +5,10 @@ urxvt.boldFont: xft:Ricty:size=12:bold,xft:IPAGothic:size=12:bold
 urxvt.transparent: off
 urxvt.foreground: white
 urxvt.background: rgba:0000/0000/0000/ffff
-urxvt.backgroundPixmap: /home/osak/img/lambdaka-musume4-bg-transparent.png
+urxvt.backgroundPixmap: /home/osak/img/background_ikmsm7.png
 urxvt.inputMethod: ibus
 urxvt.imlocale: ja_JP.UTF-8
 urxvt.depth: 32
+urxvt.color4: 105
+
+Xcursor.size: 16

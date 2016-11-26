@@ -45,13 +45,13 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rails)
+plugins=(git rails mercurial)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/var/lib/gems/1.9.1/bin:$HOME/script:$HOME/.cabal/bin:$HOME/.gem/bin:$HOME/app/arm-2011.09/bin:$HOME/.local/bin:/usr/bin/vendor_perl:$HOME/.rbenv/shims:$PATH"
+export PATH="/var/lib/gems/1.9.1/bin:$HOME/script:$HOME/.cabal/bin:$HOME/.gem/bin:$HOME/.chefdk/gem/ruby/2.1.0/bin:$HOME/app/arm-2011.09/bin:$HOME/.local/bin:/usr/bin/vendor_perl:$HOME/.rbenv/shims:$PATH"
 export GEM_HOME="$HOME/.gem"
 export PYTHONPATH="/home/osak/.local/lib/python:$PYTHONPATH"
 export EDITOR="vim"
@@ -65,7 +65,7 @@ export GOPATH=/home/osak/program/Go
 
 export REPORTTIME=60
 
-alias cp='cp -v'
+alias cp='rsync -a --progress'
 alias rm='rm -v'
 alias vi='vim'
 alias ls='ls -F --color'
@@ -97,3 +97,4 @@ zstyle ':completion:*:cd:*' ignore-parents parent pwd
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+. /home/osak/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
