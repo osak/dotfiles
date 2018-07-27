@@ -56,8 +56,7 @@ export GEM_HOME="$HOME/.gem"
 export PYTHONPATH="/home/osak/.local/lib/python:$PYTHONPATH"
 export EDITOR="vim"
 export SVN_SSH='ssh -l osak -i /home/osak/.ssh/sakura_key'
-export LANG=ja_JP.utf8
-export TZ='Asia/Tokyo'
+#export TZ='Asia/Tokyo'
 export CFLAGS="-Wall -O2"
 export CXXFLAGS="-Wall -O2 -g -std=c++11"
 export MAKEFLAGS="-j4"
@@ -65,7 +64,7 @@ export GOPATH=/home/osak/program/Go
 
 export REPORTTIME=60
 
-alias cp='rsync -a --progress'
+#alias cp='rsync -a --progress'
 alias rm='rm -v'
 alias vi='vim'
 alias ls='ls -F --color'
@@ -98,3 +97,4 @@ zstyle ':completion:*:cd:*' ignore-parents parent pwd
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 . /home/osak/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+source /usr/share/nvm/init-nvm.sh

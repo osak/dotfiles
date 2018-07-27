@@ -111,40 +111,6 @@ endif " has("autocmd")
 			"\ | wincmd p | diffthis
 
 " Vundle
-filetype off
-set rtp+=~/.vim/bundle/neobundle.vim
-call neobundle#begin(expand('~/.vim/bundle/'))
-NeoBundleFetch 'Shougo/neobundle.vim'
-NeoBundle 'Shougo/neocomplete'
-NeoBundle 'Shougo/vimproc', {'build': {'unix': 'make -f make_unix.mak'}}
-NeoBundle 'maksimr/vim-jsbeautify'
-NeoBundle 'eagletmt/ghcmod-vim'
-NeoBundle 'ujihisa/neco-ghc'
-NeoBundle 'anekos/char-counter-vim'
-NeoBundle 'thinca/vim-quickrun'
-NeoBundle 'matchit.zip'
-NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'kana/vim-filetype-haskell'
-NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'osak/molokai'
-NeoBundle 'nanotech/jellybeans.vim'
-NeoBundle '2GMon/mikutter_mode.vim'
-NeoBundle 'Shougo/neosnippet'
-NeoBundle 'Shougo/neosnippet-snippets'
-NeoBundle 'Align'
-NeoBundle 'tpope/vim-rails'
-NeoBundle 'YankRing.vim'
-NeoBundle 'osak/japanese-rst-vim'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'oblitum/rainbow'
-NeoBundle 'renamer.vim'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'slim-template/vim-slim'
-NeoBundle 'fakeclip'
-NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'fatih/vim-go'
-NeoBundle 'MiSawa/sniplate.vim'
-call neobundle#end()
 filetype plugin indent on
 
 nnoremap <silent> <Plug>select_cstyle_if :<C-u>call <SID>select_cstyle_if()<CR>
@@ -252,7 +218,7 @@ set list
 set listchars=tab:>-
 set exrc
 set secure
-set statusline=%q%h%w%f%r%m\ %=%l/%L,%c\ [%{b:charCounterCount}]
+set statusline=%q%h%w%f%r%m\ %=%l/%L,%c
 set laststatus=2
 
 set mouse=a
@@ -264,7 +230,6 @@ let g:solarized_termtrans=1
 let g:solarized_termcolors=256
 set background=dark
 "colorscheme wombat256mod
-colorscheme molokai
 hi Statement cterm=bold
 hi Type cterm=bold
 hi Pmenusel ctermbg=12
@@ -296,16 +261,6 @@ command -range Mecab <line1>,<line2>:QuickRun -type mecab
 nnoremap <leader>m :Mecab<CR>
 vnoremap <leader>m :Mecab<CR>
 
-imap <C-x> <Plug>(neosnippet_expand_or_jump)
-smap <C-x> <Plug>(neosnippet_expand_or_jump)
-xmap <C-x> <Plug>(neosnippet_expand_target)
-
-imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-            \ "\<Plug>(neosnippet_expand_or_jump)"
-            \: pumvisible() ? "\<C-n>" : "\<TAB>"
-
 nnoremap <leader>p :YRShow<CR>
 
 "let g:rainbow_active = 1
-
-NeoBundleCheck
