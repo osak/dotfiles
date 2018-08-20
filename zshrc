@@ -37,6 +37,17 @@ function cal() {
     fi
 }
 
+function smart-unzip() {
+    file=$1
+    topdirs=$(unzip -Z1 "${file}" | cut -d '/' -f 1 | sort -u | wc -l)
+    if [ $topdirs -gt 1 ]; then
+        dirname=${file%.zip}
+        unzip "${file}" "-d${dirname}"
+    else
+        unzip "${file}"
+    fi
+}
+
 setopt extendedglob
 zstyle ':completion:*' menu select
 zstyle ':completion:*:cd:*' ignore-parents parent pwd
