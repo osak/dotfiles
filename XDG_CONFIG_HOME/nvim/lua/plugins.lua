@@ -23,9 +23,15 @@ return require('packer').startup(function(use)
     }
   }
 
+  -- Diagnostic window
+  use 'folke/trouble.nvim'
+
   -- Auto completion
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/cmp-buffer'
 
   -- Color scheme
   use 'folke/tokyonight.nvim'
