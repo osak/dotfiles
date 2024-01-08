@@ -34,7 +34,8 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-buffer'
 
   -- Color scheme
-  use 'folke/tokyonight.nvim'
+  -- use 'folke/tokyonight.nvim'
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   -- Haskell
   use {
@@ -44,6 +45,15 @@ return require('packer').startup(function(use)
       'nvim-telescope/telescope.nvim', -- optional
     },
     branch = '1.x.x', -- recommended
+  }
+
+  -- TypeScript
+  use {
+    "pmizio/typescript-tools.nvim",
+    requires = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+    config = function()
+	    require("typescript-tools").setup {}
+    end,
   }
 
   -- Automatically set up your configuration after cloning packer.nvim

@@ -8,7 +8,16 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 
 -- empty setup using defaults
-require("nvim-tree").setup()
+require("nvim-tree").setup({
+  on_attach = function(bufnr)
+    local api = require('nvim-tree.api')
+    local function opts(desc)
+      return { desc = 'nvim-tree: ' .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
+    end
+    vim.keymap.set('n', '<Enter>', api.node.open.edit, opts('Open'))
+    vim.keymap.set('n', '<LeftRelease>', api.node.open.edit, opts('Open'))
+  end
+})
 
 -- Auto completion
 local cmp = require("cmp")
@@ -76,4 +85,5 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 -- Appearance
 vim.opt.number = true
-vim.cmd[[ colorscheme tokyonight ]]
+vim.bg = 'dark'
+vim.cmd.colorscheme "catppuccin-latte"
