@@ -56,6 +56,13 @@ return require('packer').startup(function(use)
     end,
   }
 
+  -- Rust
+  use {
+    "mrcjkb/rustaceanvim",
+    tag = '4.0.3',
+    ft = 'rust',
+  }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
