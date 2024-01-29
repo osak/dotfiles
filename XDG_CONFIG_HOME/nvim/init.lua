@@ -80,8 +80,16 @@ cmp.setup.cmdline(':', {
   })
 })
 
--- Set up lspconfig.
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
+local inlay = require("lsp-inlayhints")
+inlay.setup()
+vim.g.rustaceanvim = {
+  server = {
+    on_attach = function(c, b)
+      inlay.on_attach(c, b)
+    end,
+  },
+}
+
 
 -- Appearance
 vim.opt.number = true

@@ -59,8 +59,12 @@ return require('packer').startup(function(use)
   -- Rust
   use {
     "mrcjkb/rustaceanvim",
-    tag = '4.0.3',
-    ft = 'rust',
+    tag = "4.0.3",
+    ft = { "rust" },
+  }
+
+  use {
+    "lvimuser/lsp-inlayhints.nvim"
   }
 
   -- Automatically set up your configuration after cloning packer.nvim
