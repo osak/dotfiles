@@ -22,6 +22,19 @@ config.font = wezterm.font_with_fallback {
 }
 config.font_size = 11
 
+config.keys = {
+  {
+      key = '1',
+      mods = 'ALT|CTRL',
+      action = wezterm.action.SpawnCommandInNewTab { domain = { DomainName = 'local' }, args = { 'powershell' } },
+  },
+  {
+      key = '2',
+      mods = 'ALT|CTRL',
+      action = wezterm.action.SpawnTab { DomainName = 'WSL:Ubuntu' },
+  },
+}
+config.audible_bell = "Disabled"
+
 -- and finally, return the configuration to wezterm
 return config
-
