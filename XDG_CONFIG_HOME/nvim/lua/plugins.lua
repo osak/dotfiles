@@ -37,6 +37,9 @@ return require('packer').startup(function(use)
   -- use 'folke/tokyonight.nvim'
   use { "catppuccin/nvim", as = "catppuccin" }
 
+  -- Treesitter
+  use 'nvim-treesitter/nvim-treesitter'
+
   -- Haskell
   use {
     'mrcjkb/haskell-tools.nvim',
@@ -62,6 +65,9 @@ return require('packer').startup(function(use)
     tag = "4.0.3",
     ft = { "rust" },
   }
+
+  -- Go
+  use 'ray-x/go.nvim'
 
   use {
     "lvimuser/lsp-inlayhints.nvim"

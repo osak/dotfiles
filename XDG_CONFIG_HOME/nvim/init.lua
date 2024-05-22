@@ -119,5 +119,8 @@ vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
   vim.lsp.handlers.hover, { border = "rounded" }
 )
 
+require('lspconfig').gopls.setup {}
+require('go').setup()
+
 -- general
 vim.g.mapleader = '.'
