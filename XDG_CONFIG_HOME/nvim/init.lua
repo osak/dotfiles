@@ -14,6 +14,10 @@ require("nvim-tree").setup({
     local function opts(desc)
       return { desc = 'nvim-tree: ' .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
     end
+    -- default mappings
+    api.config.mappings.default_on_attach(bufnr)
+
+    -- custom mappings
     vim.keymap.set('n', '<Enter>', api.node.open.edit, opts('Open'))
     vim.keymap.set('n', '<LeftRelease>', api.node.open.edit, opts('Open'))
   end
