@@ -1,15 +1,15 @@
 local ht = require('haskell-tools')
 local def_opts = { noremap = true, silent = true, }
 
-local opts = vim.tbl_extend('keep', def_opts, { buffer = bufnr, })
-vim.keymap.set('n', '<space>ca', vim.lsp.codelens.run, opts)
-vim.keymap.set('n', '<space>hs', ht.hoogle.hoogle_signature, opts)
-vim.keymap.set('n', '<space>ea', ht.lsp.buf_eval_all, opts)
 
 -- Suggested keymaps that do not depend on haskell-language-server:
 local bufnr = vim.api.nvim_get_current_buf()
 -- set buffer = bufnr in ftplugin/haskell.lua
 local opts = { noremap = true, silent = true, buffer = bufnr }
+
+vim.keymap.set('n', '<space>ca', vim.lsp.codelens.run, opts)
+vim.keymap.set('n', '<space>hs', ht.hoogle.hoogle_signature, opts)
+vim.keymap.set('n', '<space>ea', ht.lsp.buf_eval_all, opts)
 
 -- Toggle a GHCi repl for the current package
 vim.keymap.set('n', '<leader>rr', ht.repl.toggle, opts)

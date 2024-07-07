@@ -26,7 +26,6 @@ return require('packer').startup(function(use)
   -- Diagnostic window
   use {
     'folke/trouble.nvim',
-    tag = 'v2.10.0'
   }
 
   -- Auto completion

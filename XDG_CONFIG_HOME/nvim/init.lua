@@ -128,6 +128,7 @@ vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
 
 require('lspconfig').gopls.setup {}
 require('go').setup()
+require('trouble').setup()
 
 -- general
 vim.g.mapleader = '.'
@@ -147,3 +148,13 @@ vim.api.nvim_create_user_command(
   end,
   {}
 )
+
+vim.api.nvim_create_user_command(
+  'Tr',
+  function()
+    vim.cmd([[<cmd>Trouble qflist open]])
+  end,
+  {}
+)
+
+
