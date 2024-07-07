@@ -24,7 +24,10 @@ return require('packer').startup(function(use)
   }
 
   -- Diagnostic window
-  use 'folke/trouble.nvim'
+  use {
+    'folke/trouble.nvim',
+    tag = 'v2.10.0'
+  }
 
   -- Auto completion
   use 'hrsh7th/nvim-cmp'
@@ -47,7 +50,7 @@ return require('packer').startup(function(use)
       'nvim-lua/plenary.nvim',
       'nvim-telescope/telescope.nvim', -- optional
     },
-    branch = '1.x.x', -- recommended
+    tag = '3.1.10',
   }
 
   -- TypeScript

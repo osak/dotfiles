@@ -8,7 +8,7 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 
 -- empty setup using defaults
-require("nvim-tree").setup({
+require('nvim-tree').setup({
   on_attach = function(bufnr)
     local api = require('nvim-tree.api')
     local function opts(desc)
@@ -20,7 +20,10 @@ require("nvim-tree").setup({
     -- custom mappings
     vim.keymap.set('n', '<Enter>', api.node.open.edit, opts('Open'))
     vim.keymap.set('n', '<LeftRelease>', api.node.open.edit, opts('Open'))
-  end
+  end,
+  filters = {
+    git_ignored = false,
+  },
 })
 
 -- Auto completion
@@ -128,3 +131,19 @@ require('go').setup()
 
 -- general
 vim.g.mapleader = '.'
+
+vim.api.nvim_create_user_command(
+  'FindFiles',
+  function()
+    vim.cmd('Telescope find_files')
+  end,
+  {}
+)
+
+vim.api.nvim_create_user_command(
+  'LiveGrep',
+  function()
+    vim.cmd('Telescope live_grep')
+  end,
+  {}
+)
