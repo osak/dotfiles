@@ -157,4 +157,18 @@ vim.api.nvim_create_user_command(
   {}
 )
 
+vim.g.clipboard = {
+  name = 'tmux',
+  copy = {
+    ['+'] = {'tmux', 'load-buffer', '-w', '-'},
+    ['*'] = {'tmux', 'load-buffer', '-w', '-'},
+  },
+  paste = {
+    ['+'] = {'tmux', 'save-buffer', '-'},
+    ['*'] = {'tmux', 'save-buffer', '-'},
+  }
+}
 
+vim.opt.expandtab = true
+vim.opt.shiftwidth = 4
+vim.opt.autoindent = true
